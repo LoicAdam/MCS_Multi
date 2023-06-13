@@ -1,0 +1,68 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={x},
+xmin=0, xmax=1,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel style={rotate=-90.0},
+ylabel={y},
+ymin=0, ymax=1,
+ytick style={color=black}
+]
+\draw[draw=none,fill=steelblue31119180,fill opacity=0.2] (axis cs:0.0827098625771088,0.224218970785179) rectangle (axis cs:0.115612396023276,0.299123853041107);
+\draw[draw=none,fill=steelblue31119180,fill opacity=0.2] (axis cs:0.288750329079908,0.322955749361957) rectangle (axis cs:0.313975923687001,0.370790615455296);
+\draw[draw=none,fill=steelblue31119180,fill opacity=0.2] (axis cs:0.482186917937265,0.701618189707091) rectangle (axis cs:0.515109929816531,0.797651745560628);
+\draw[draw=none,fill=steelblue31119180,fill opacity=0.2] (axis cs:0.688173066415842,0.521180726965641) rectangle (axis cs:0.718535128752488,0.574988211065971);
+\draw[draw=none,fill=steelblue31119180,fill opacity=0.2] (axis cs:0.880446281073652,0.618137314805027) rectangle (axis cs:0.919842134682518,0.685320092042654);
+\addplot [semithick, steelblue31119180, dashed]
+table {%
+0 0.259999990463257
+1.01010096073151 0.765050530433655
+};
+\addplot [semithick, darkorange25512714]
+table {%
+0 0.200000047683716
+1.01010096073151 0.705050468444824
+};
+\draw (axis cs:0.0991611293001926,0.161671411913143) node[
+  scale=0.5,
+  anchor=base,
+  text=black,
+  rotate=0.0
+]{0};
+\draw (axis cs:0.301363126383454,0.246873182408626) node[
+  scale=0.5,
+  anchor=base,
+  text=black,
+  rotate=0.0
+]{1};
+\draw (axis cs:0.498648423876898,0.64963496763386) node[
+  scale=0.5,
+  anchor=base,
+  text=black,
+  rotate=0.0
+]{2};
+\draw (axis cs:0.703354097584165,0.448084469015806) node[
+  scale=0.5,
+  anchor=base,
+  text=black,
+  rotate=0.0
+]{3};
+\draw (axis cs:0.900144207878085,0.551728703423841) node[
+  scale=0.5,
+  anchor=base,
+  text=black,
+  rotate=0.0
+]{4};
+\end{axis}
+
+\end{tikzpicture}

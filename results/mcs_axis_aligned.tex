@@ -1,0 +1,128 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{gray148142119}{RGB}{148,142,119}
+\definecolor{midnightblue851112}{RGB}{8,51,112}
+\definecolor{sandybrown22820681}{RGB}{228,206,81}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={\(\displaystyle \omega_1\)},
+xmin=0, xmax=1,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle \omega_2\)},
+ymin=0, ymax=1,
+ytick style={color=black}
+]
+\path [draw=black, fill=midnightblue851112, fill opacity=0.3]
+(axis cs:0.25,0.2)
+--(axis cs:0.45,0.2)
+--(axis cs:0.45,0.4)
+--(axis cs:0.25,0.4)
+--cycle;
+\path [draw=black, fill=gray148142119, fill opacity=0.3]
+(axis cs:0.2,0.8)
+--(axis cs:0.4,0.8)
+--(axis cs:0.4,0.5)
+--(axis cs:0.2,0.5)
+--cycle;
+\path [draw=black, fill=gray148142119, fill opacity=0.3]
+(axis cs:0.3,0.7)
+--(axis cs:0.6,0.7)
+--(axis cs:0.6,0.45)
+--(axis cs:0.3,0.45)
+--cycle;
+\path [draw=black, fill=sandybrown22820681, fill opacity=0.3]
+(axis cs:0.7,0.7)
+--(axis cs:0.8,0.7)
+--(axis cs:0.8,0.3)
+--(axis cs:0.7,0.3)
+--cycle;
+\path [draw=black, fill=sandybrown22820681, fill opacity=0.3]
+(axis cs:0.75,0.8)
+--(axis cs:0.9,0.8)
+--(axis cs:0.9,0.6)
+--(axis cs:0.75,0.6)
+--cycle;
+\addplot [semithick, black, mark=|, mark size=3, mark options={solid}]
+table {%
+0.25 0.1
+0.45 0.1
+};
+\addplot [semithick, black, mark=|, mark size=3, mark options={solid}]
+table {%
+0.2 0.07
+0.4 0.07
+};
+\addplot [semithick, black, mark=|, mark size=3, mark options={solid}]
+table {%
+0.3 0.04
+0.6 0.04
+};
+\addplot [semithick, black, mark=|, mark size=3, mark options={solid}]
+table {%
+0.7 0.1
+0.8 0.1
+};
+\addplot [semithick, black, mark=|, mark size=3, mark options={solid}]
+table {%
+0.75 0.07
+0.9 0.07
+};
+\addplot [semithick, black, mark=-, mark size=3, mark options={solid}]
+table {%
+0.13 0.2
+0.13 0.4
+};
+\addplot [semithick, black, mark=-, mark size=3, mark options={solid}]
+table {%
+0.1 0.5
+0.1 0.8
+};
+\addplot [semithick, black, mark=-, mark size=3, mark options={solid}]
+table {%
+0.07 0.45
+0.07 0.7
+};
+\addplot [semithick, black, mark=-, mark size=3, mark options={solid}]
+table {%
+0.04 0.3
+0.04 0.7
+};
+\addplot [semithick, black, mark=-, mark size=3, mark options={solid}]
+table {%
+0.13 0.6
+0.13 0.8
+};
+\draw (axis cs:0.35,0.3) node[
+  scale=0.6,
+  text=black,
+  rotate=0.0
+]{$S_1$};
+\draw (axis cs:0.26,0.65) node[
+  scale=0.6,
+  text=black,
+  rotate=0.0
+]{$S_2$};
+\draw (axis cs:0.47,0.56) node[
+  scale=0.6,
+  text=black,
+  rotate=0.0
+]{$S_3$};
+\draw (axis cs:0.75,0.5) node[
+  scale=0.6,
+  text=black,
+  rotate=0.0
+]{$S_4$};
+\draw (axis cs:0.83,0.7) node[
+  scale=0.6,
+  text=black,
+  rotate=0.0
+]{$S_5$};
+\end{axis}
+
+\end{tikzpicture}

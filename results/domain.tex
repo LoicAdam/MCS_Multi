@@ -1,0 +1,27 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={\(\displaystyle a\)},
+xmin=0, xmax=4,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle b\)},
+ymin=-3.5, ymax=1.0625,
+ytick style={color=black}
+]
+\path [draw=none, fill=steelblue31119180, fill opacity=0.3]
+(axis cs:0,1.0625)
+--(axis cs:1,-0.5)
+--(axis cs:4,-3.5)
+--(axis cs:1.25,0.625)
+--cycle;
+\end{axis}
+
+\end{tikzpicture}
